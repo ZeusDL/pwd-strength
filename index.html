@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="password-checker">
+        <h1>Password Checker</h1>
+        <input type="password" id="Password" placeholder="Enter Your Password" aria-describedby="password-description">
+        <div id="password-description" class="hint">Enter at least 8 characters, a mix of uppercase, lowercase, numbers, and symbols.</div>
+
+        <div class="strength-indicator">
+            <div class="bar" id="bar1"></div>
+            <div class="bar" id="bar2"></div>
+            <div class="bar" id="bar3"></div>
+        </div>
+        <p id="feedback"></p>
+        <ul id="suggestions" class="suggestions"></ul>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>

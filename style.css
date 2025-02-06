@@ -1,0 +1,109 @@
+body {
+  background-color: #f4f4f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: sans-serif; 
+}
+
+.password-checker {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px; 
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid #ccc; 
+  box-sizing: border-box; 
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+input[type="password"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 244, 0.2); 
+}
+
+.strength-indicator {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px; 
+}
+
+.bar {
+  width: 30%;
+  height: 8px;
+  background: #ddd;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, width 0.3s ease, transform 0.2s ease; 
+}
+
+.bar.active {
+  transform: scaleY(1.2); 
+}
+
+.bar.weak {
+  background: #f00;
+}
+
+.bar.medium {
+  background: #ffb400;
+}
+
+.bar.strong {
+  background: #4caf50;
+}
+
+#feedback {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px; 
+  transition: color 0.3s ease; 
+}
+
+#feedback.weak {
+  color: #f00;
+}
+
+#feedback.medium {
+  color: #ffb400;
+}
+
+#feedback.strong {
+  color: #4caf50;
+}
+
+.suggestions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  color: #777;
+  margin-top: 10px;
+}
+
+.suggestions li {
+  margin-bottom: 5px;
+}
+
+.hint {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
