@@ -29,7 +29,7 @@ This project showcases front-end development skills with a focus on interactive 
 
 ## 💻 How to Use
 
-1.  Clone the repository: `git clone https://github.com/ZeusDL/pwd-strength` 
+1.  Clone the repository: `git clone https://github.com/ZeusDL/realtime-password-checker` 
 2.  Open the `index.html` file in your web browser.
 
 ## ⚙️ Customization
